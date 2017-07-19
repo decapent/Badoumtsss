@@ -13,7 +13,7 @@ public class LatencyController : MonoBehaviour
     float deltaTime = 0.0f;
 
     OVRDisplay.LatencyData latencyData;
-    bool statIsHidden = true;
+    bool statIsHidden = true; 
 
     void Start()
     {
