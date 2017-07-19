@@ -18,46 +18,29 @@ public class LatencyController : MonoBehaviour
     void Start()
     {
         latencyData = OVRManager.display.latency;
-        
     }
 
     void Update()
     {
-
         if (Input.GetButtonDown("DevelopStat"))
         {
-            if(statIsHidden)
-                HideInfomation();
+            if (statIsHidden)
+                ShowInfomation(false);
             else
-                ShowInfomation();
+                ShowInfomation(true);
         }
-
 
         deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
 
         latency.text = string.Format("Latency : {0:0.00} ms", latencyData.render);            
 
         fps.text = string.Format("FPS : {0}", deltaTime);
-
-
-
-
-
     }
 
-
-    void HideInfomation()
+    void ShowInfomation(bool isActive)
     {
-        fps.gameObject.SetActive(false);
-        latency.gameObject.SetActive(false);
-        statIsHidden = false;
+        fps.gameObject.SetActive(isActive);
+        latency.gameObject.SetActive(isActive);
+        statIsHidden = isActive;
     }
-
-    void ShowInfomation()
-    {
-        fps.gameObject.SetActive(true);
-        latency.gameObject.SetActive(true);
-        statIsHidden = true;
-    }
-
 }
