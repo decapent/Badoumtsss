@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class LatencyController : MonoBehaviour
 {
-
     public Text fps;
     public Text latency;
 

@@ -144,9 +144,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Badoumtsss.Plugins.csproj">
+      <Project>{9017B32D-4C5A-AFFF-47E1-8561BED341E2}</Project>
+      <Name>Badoumtsss.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="Badoumtsss.csproj">
       <Project>{46480705-74D2-BDB4-F3DE-538C9ACEA400}</Project>
       <Name>Badoumtsss</Name>
+    </ProjectReference>
+    <ProjectReference Include="Badoumtsss.Editor.Plugins.csproj">
+      <Project>{70F45429-5357-702A-8419-B6721A2315BF}</Project>
+      <Name>Badoumtsss.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +182,38 @@
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
     <None Include="Assets\OvrAvatar\Content\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\OvrAvatar\Samples\SocialStarter\README.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\Expression\NuiExpressionModelManifest.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_F.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HLP.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HRP.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\EvalModel\Front.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\EvalModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\EvalModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\MouthModel\MeanShapes.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\MouthModel\close.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\MouthModel\lopen.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_appearance_classifier.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_shape_classifier.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\ViewModel\front.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\ViewModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\ViewModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86\NuiDatabase\HDFaceTracker\WholeHeadModel\FullHeadMaskVertexCorrespondence.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\Expression\NuiExpressionModelManifest.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_F.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HLP.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\AAMModel\Map2D3D_HRP.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\Front.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\EvalModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\MeanShapes.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\close.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\MouthModel\lopen.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_appearance_classifier.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\SkintoneModel\skintone_shape_classifier.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\front.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\left.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\ViewModel\right.p.txt" />
+    <None Include="Assets\Plugins\x86_64\NuiDatabase\HDFaceTracker\WholeHeadModel\FullHeadMaskVertexCorrespondence.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
