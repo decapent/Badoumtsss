@@ -20,5 +20,14 @@ public class HandController : MonoBehaviour {
         {
             this.gameObject.GetComponent<Renderer>().material.color = Color.gray;
         }
-	}
+
+        if (OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+        {
+            this.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+        }
+        else
+        {
+            this.gameObject.GetComponent<Renderer>().material.color = Color.black;
+        }
+    }
 }
