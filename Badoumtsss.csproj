@@ -267,6 +267,7 @@
     <Compile Include="Assets\Scripts\HandController.cs" />
     <Compile Include="Assets\Scripts\LatencyController.cs" />
     <Compile Include="Assets\Scripts\OculusTouchInteractions.cs" />
+    <Compile Include="Assets\Scripts\StickController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\DecoObjects\Stylized Mushroom\Shader\mushroom.shader" />

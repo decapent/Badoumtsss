@@ -21,7 +21,8 @@ public class LatencyController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("DevelopStat"))
+        //if (Input.GetButtonDown("DevelopStat"))
+        if (OVRInput.Get(OVRInput.Button.One))
         {
             if (statIsHidden)
                 ShowInfomation(false);
