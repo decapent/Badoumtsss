@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badoumtsss.Plugins", "Badoumtsss.Plugins.csproj", "{9017B32D-4C5A-AFFF-47E1-8561BED341E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Badoumtsss", "Badoumtsss.csproj", "{46480705-74D2-BDB4-F3DE-538C9ACEA400}"
