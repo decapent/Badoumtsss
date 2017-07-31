@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class StickController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     void OnTriggerEnter(Collider other)
     {
-        this.GetComponent<AudioSource>().Play();
+        // Get 3D sound component as the children of the current drum piece we are interacting with!
+        this.GetComponentInChildren<OSPAudioSource>().Play();
     }
 }
