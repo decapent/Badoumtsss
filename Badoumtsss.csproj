@@ -107,6 +107,12 @@
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
+    <Compile Include="Assets\OSP\Scripts\OSPAudioSource.cs" />
+    <Compile Include="Assets\OSP\Scripts\OSPManager.cs" />
+    <Compile Include="Assets\OSP\Scripts\OSPReflectionZone.cs" />
+    <Compile Include="Assets\OSPTestScene\Scripts\PlayTest.cs" />
+    <Compile Include="Assets\OSPTestScene\Scripts\Pulse.cs" />
+    <Compile Include="Assets\OSPTestScene\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRBoundary.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
