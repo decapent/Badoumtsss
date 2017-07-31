@@ -8,14 +8,14 @@ public class SwithLightController : MonoBehaviour {
     bool lightIsOpen = true;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         this.light = GetComponent<Light>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetButtonDown("Flashlight"))
         {
             if (lightIsOpen)
@@ -23,7 +23,6 @@ public class SwithLightController : MonoBehaviour {
             else
                 SwitchLight(true);
         }
-
     }
 
     void SwitchLight(bool isActive)
