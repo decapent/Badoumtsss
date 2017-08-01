@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwithLightController : MonoBehaviour {
 
     public Light light;
-    bool lightIsOpen = true;
+    bool isLightOpened = true;
 
     // Use this for initialization
     void Start()
@@ -16,18 +16,22 @@ public class SwithLightController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Flashlight"))
+        if(OVRInput.Get(OVRInput.Button.Two))
         {
-            if (lightIsOpen)
-                SwitchLight(false);
-            else
-                SwitchLight(true);
+            //if (lightIsOpen)
+            //    SwitchLight(false);
+            //else
+            //    SwitchLight(true);
+
+            this.SwitchLight(isLightOpened);
         }
     }
 
     void SwitchLight(bool isActive)
     {
         light.enabled=isActive;
-        lightIsOpen = isActive;
+        isLightOpened = isActive;
+
+        isLightOpened = !isLightOpened;
     }
 }

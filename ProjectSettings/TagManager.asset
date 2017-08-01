@@ -7,6 +7,17 @@ TagManager:
   - Jukebox
   - Lamp
   - TheMan
+  - BassDrum
+  - FloorTom
+  - HiHat
+  - Ride
+  - Crash
+  - Throne
+  - Snare
+  - RackTom
+  - LeftStick
+  - RightStick
+  - KickPedal
   layers:
   - Default
   - TransparentFX

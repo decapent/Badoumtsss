@@ -269,13 +269,10 @@
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
     <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\HandController.cs" />
-    <Compile Include="Assets\Scripts\JukeBox.cs" />
+    <Compile Include="Assets\Scripts\EnvironmentController.cs" />
+    <Compile Include="Assets\Scripts\JukeboxController.cs" />
     <Compile Include="Assets\Scripts\LatencyController.cs" />
-    <Compile Include="Assets\Scripts\LightController.cs" />
     <Compile Include="Assets\Scripts\OculusTouchInteractions.cs" />
-    <Compile Include="Assets\Scripts\SphereController.cs" />
     <Compile Include="Assets\Scripts\StickController.cs" />
     <Compile Include="Assets\Scripts\SwithLightController.cs" />
   </ItemGroup>

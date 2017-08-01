@@ -30,6 +30,8 @@ public class LatencyController : MonoBehaviour
                 ShowInfomation(true);
         }
 
+
+        latencyData = OVRManager.display.latency;
         deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
 
         latency.text = string.Format("Latency : {0:0.00} ms", latencyData.render);            

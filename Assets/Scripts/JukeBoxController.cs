@@ -2,33 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JukeBoxController : MonoBehaviour {
+public class JukeboxController : MonoBehaviour {
 
-    private bool isPlaying = true;
-    private OSPAudioSource jukeboxSoundSource;
+    bool isJukeboxPlaying = true;
 
-    // Use this for initialization
-    void Start ()
+    // Update is called once per frame
+    void Update()
     {
-        jukeboxSoundSource = this.GetComponentInChildren<OSPAudioSource>();	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    void OnTriggerEnter(Collider other)
-    {
-        if(isPlaying)
+        if (OVRInput.Get(OVRInput.Button.Three))
         {
-            this.jukeboxSoundSource.Stop();
+            this.toggleJukeBox(isJukeboxPlaying);
+        }
+    }
+
+    private void toggleJukeBox(bool isPlaying)
+    {
+        OSPAudioSource jukeboxSoundSource = this.GetComponentInChildren<OSPAudioSource>();
+
+        if (!isPlaying)
+        {
+            jukeboxSoundSource.Stop();
         }
         else
         {
-            this.jukeboxSoundSource.Play();
+            jukeboxSoundSource.Play();
         }
 
-        isPlaying = !isPlaying;
+        this.isJukeboxPlaying = !this.isJukeboxPlaying;
     }
 }
